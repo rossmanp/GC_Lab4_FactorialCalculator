@@ -4,8 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Pete Rossman
+//Grand Circus .NET Bootcamp Lab 4
+//March 30, 2017
+
 namespace GC_Lab4_FactorialCalculator
 {
+    //This program takes an integer and calculates the factorial of that integer.
     class Program
     {
         static void Main(string[] args)
@@ -24,6 +29,10 @@ namespace GC_Lab4_FactorialCalculator
             Console.ReadLine();
         }
 
+        //This method calculates the factorial of an integer recursively.
+        //1 is subtracted from the integer until n = 0, and at that point
+        //the full factorial calculation is returned.
+
         public static long CalculateFactorial(int n)
         {
             if (n == 0)
@@ -33,6 +42,7 @@ namespace GC_Lab4_FactorialCalculator
             return n * CalculateFactorial(n - 1);
         }
 
+        //The Continue method lets the user run the calculator again if desired.
         public static Boolean Continue()
         {
             Console.Write("\nContinue? (Y/N): ");
