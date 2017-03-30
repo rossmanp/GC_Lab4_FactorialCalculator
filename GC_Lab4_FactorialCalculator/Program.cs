@@ -15,13 +15,12 @@ namespace GC_Lab4_FactorialCalculator
     {
         static void Main(string[] args)
         {
-            int myInt;
+            int myInt = 0;
             bool run = true;
             Console.WriteLine("Welcome to the Factorial Calculator!");
             while (run)
-            {     
-                Console.Write("\nEnter an integer that's greater than 0 but less than or equal to 20: ");
-                int.TryParse(Console.ReadLine(), out myInt);
+            {
+                myInt = IntValidator.getIntWithinRange("", 0, 20);
                 long factorial = CalculateFactorial(myInt);
                 Console.WriteLine("\nThe factorial of " + myInt + " is " + factorial + ".");
                 run = Continue();
