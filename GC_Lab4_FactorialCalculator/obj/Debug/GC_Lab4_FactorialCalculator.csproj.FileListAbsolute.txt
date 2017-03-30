@@ -1,0 +1,6 @@
+c:\users\peter\onedrive\documents\visual studio 2015\Projects\GC_Lab4_FactorialCalculator\GC_Lab4_FactorialCalculator\bin\Debug\GC_Lab4_FactorialCalculator.exe.config
+c:\users\peter\onedrive\documents\visual studio 2015\Projects\GC_Lab4_FactorialCalculator\GC_Lab4_FactorialCalculator\bin\Debug\GC_Lab4_FactorialCalculator.exe
+c:\users\peter\onedrive\documents\visual studio 2015\Projects\GC_Lab4_FactorialCalculator\GC_Lab4_FactorialCalculator\bin\Debug\GC_Lab4_FactorialCalculator.pdb
+c:\users\peter\onedrive\documents\visual studio 2015\Projects\GC_Lab4_FactorialCalculator\GC_Lab4_FactorialCalculator\obj\Debug\GC_Lab4_FactorialCalculator.csprojResolveAssemblyReference.cache
+c:\users\peter\onedrive\documents\visual studio 2015\Projects\GC_Lab4_FactorialCalculator\GC_Lab4_FactorialCalculator\obj\Debug\GC_Lab4_FactorialCalculator.exe
+c:\users\peter\onedrive\documents\visual studio 2015\Projects\GC_Lab4_FactorialCalculator\GC_Lab4_FactorialCalculator\obj\Debug\GC_Lab4_FactorialCalculator.pdb
