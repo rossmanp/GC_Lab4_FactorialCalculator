@@ -23,7 +23,7 @@ namespace GC_Lab4_FactorialCalculator
             int.TryParse(prompt, out _myInt);
             while (!int.TryParse(prompt, out _myInt))
             {
-                Console.Write("The value must be an integer, try again: ");
+                Console.Write("\nThe value must be an integer, try again: ");
                 prompt = Console.ReadLine();
             }
             return _myInt;
@@ -37,15 +37,15 @@ namespace GC_Lab4_FactorialCalculator
             IntValidator num = new IntValidator();
             while (run)
             {
-                Console.WriteLine("Enter an integer between 0 and 20: ");
+                Console.Write("\nEnter an integer between " + min + " and " + max + ":");
                 _myInt = IntValidator.getInt(Console.ReadLine());
                 if (_myInt < min)
                 {
-                    Console.WriteLine("Error! Number must be greater than " + (min - 1));
+                    Console.WriteLine("\nError! Please enter an integer greater than " + (min - 1));
                 }
                 else if (_myInt > max)
                 {
-                    Console.WriteLine("Error! Number must be less than " + (max + 1));
+                    Console.WriteLine("\nError! Please enter an integer less than " + (max + 1));
                 }
                 else
                 {
