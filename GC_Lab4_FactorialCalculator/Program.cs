@@ -12,36 +12,36 @@ namespace GC_Lab4_FactorialCalculator
         {
             int myInt;
             bool run = true;
+            Console.WriteLine("Welcome to the Factorial Calculator!");
             while (run)
-            {
-                Console.WriteLine("Welcome to the Factorial Calculator!");
-                Console.WriteLine("\nEnter an integer that's greater than 0 but less than or equal to 10: ");
+            {     
+                Console.Write("\nEnter an integer that's greater than 0 but less than or equal to 20: ");
                 int.TryParse(Console.ReadLine(), out myInt);
-                CalculateFactorial(myInt);
+                long factorial = CalculateFactorial(myInt);
+                Console.WriteLine("\nThe factorial of " + myInt + " is " + factorial + ".");
                 run = Continue();
             }
             Console.ReadLine();
         }
 
-        public static void CalculateFactorial(int num)
+        public static long CalculateFactorial(int n)
         {
-            long factorial = 1;
-            for (int i = 1; i <= num; i++)
+            if (n == 0)
             {
-                factorial = i * factorial;
+                return 1;
             }
-            Console.WriteLine("\nThe factorial of " + num + " is " + factorial + " .");
+            return n * CalculateFactorial(n - 1);
         }
 
         public static Boolean Continue()
         {
-            Console.WriteLine("Continue? (Y/N): ");
+            Console.Write("\nContinue? (Y/N): ");
             string input = Console.ReadLine();
             Boolean run = true;
             input = input.ToLower();
             if (input == "n")
             {
-                Console.WriteLine("Goodbye!");
+                Console.WriteLine("\nGoodbye!");
                 run = false;
             }
             else if (input == "y")
